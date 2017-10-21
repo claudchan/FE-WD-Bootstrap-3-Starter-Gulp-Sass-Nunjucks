@@ -58,24 +58,27 @@
 }
 
 // Responsive Breakpoints
-// Usage: @include breakpoint(xs|sm|md|lg|xl|768px|768px, 1200px);
+// Usage: @include breakpoint(xxs|xs|sm|md|lg|xl|768px|768px, 1200px);
 @mixin breakpoint($min: 0, $max: 0) {
   $type: type-of($min);
   @if $type == string {
+    @if $min == xxs {
+      @media (max-width: 480px) { @content; }
+    }
     @if $min == xs {
-      @media (max-width: 575px) { @content; }
+      @media (max-width: 767px) { @content; }
     }
-    @if $min == sm {
-      @media (min-width: 576px) { @content; }
-    }
-    @else if $min == md {
+    @else if $min == sm {
       @media (min-width: 768px) { @content; }
     }
-    @else if $min == lg {
+    @else if $min == md {
       @media (min-width: 992px) { @content; }
     }
-    @else if $min == xl {
+    @else if $min == lg {
       @media (min-width: 1200px) { @content; }
+    }
+    @else if $min == xl {
+      @media (min-width: 1600px) { @content; }
     }
   }
   @else if $type == number {
