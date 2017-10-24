@@ -117,7 +117,7 @@ gulp.task('browser-sync', function () {
 });
 
 // Build tasks
-// clean out all files and folders from build folder
+// task to clean out all files and folders from build folder
 gulp.task('build:clean', ['nunjucks', 'scripts', 'styles'], function () {
   return del([
     config.path.build+'/**'
