@@ -103,7 +103,7 @@ gulp.task('nunjucks:render', function () {
 
 // task to reload after nunjuck's rendered
 gulp.task('nunjucks', ['nunjucks:render'], function (done) {
-  browserSync.reload();
+  reload;
   done();
 });
 
