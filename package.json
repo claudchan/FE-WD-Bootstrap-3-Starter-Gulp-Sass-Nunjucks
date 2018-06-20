@@ -1,7 +1,7 @@
 {
-  "name": "fe-wd-bootstrap-4-starter-gulp-sass-nunjucks",
+  "name": "fe-wd-bootstrap-3-starter-gulp-sass-nunjucks",
   "version": "1.0.0",
-  "description": "Front-end web development Bootstrap 4 starter",
+  "description": "Front-end web development Bootstrap 3 starter",
   "scripts": {
     "start": "npm install",
     "yarn": "yarn install",
@@ -12,19 +12,21 @@
   "author": "claudchan",
   "repository": {
     "type": "git",
-    "url": "git://github.com/claudchan/fe-wd-bootstrap-4-starter-gulp-sass-nunjucks.git"
+    "url": "git://github.com/claudchan/fe-wd-bootstrap-3-starter-gulp-sass-nunjucks.git"
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^8.2.0",
     "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-html-replace": "^1.6.2",
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
