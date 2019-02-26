@@ -1,6 +1,6 @@
 {
   "name": "fe-wd-bootstrap-3-starter-gulp-sass-nunjucks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Front-end web development Bootstrap 3 starter",
   "scripts": {
     "start": "npm install",
