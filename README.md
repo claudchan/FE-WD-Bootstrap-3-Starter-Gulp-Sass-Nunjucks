@@ -18,7 +18,7 @@ npm install gulp-cli -g
 
 ### Front-end Framework ###
 
-* [Bootstrap 3.3.7](https://getbootstrap.com/)
+* [Bootstrap 3.4.1](https://getbootstrap.com/)
 
 ### JavaScript framework ###
 
